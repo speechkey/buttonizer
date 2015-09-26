@@ -3,4 +3,9 @@
     <application>buttonizer</application>
     <version>1</version>
     <threadsafe>true</threadsafe>
+    <static-files>
+        <include path="/favicon.ico" expiration="1d" />
+        <include path="/js/**" />
+        <include path="/css/**" />
+    </static-files>
 </appengine-web-app>

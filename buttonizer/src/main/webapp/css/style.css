@@ -1,0 +1,78 @@
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+#headerwrap {
+    /* background: url(../img/bg01.jpg) no-repeat center top; */
+    background-color: #3498db;
+    margin-top: -20px;
+    padding-top: 100px;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 350px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.superbutton {
+    color: white;
+    display: block;
+    margin: 25px auto;
+    padding: 25px 66px;
+    font-size: 40px;
+    width: 50%;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.supertext {
+    margin-bottom: 15px;
+    font-size: 34px;
+    font-weight: 200;
+}
+
+.supertext1 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 400;
+}

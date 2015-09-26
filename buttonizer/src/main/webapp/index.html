@@ -1,18 +1,69 @@
-<!doctype html>
-<html>
-  <head>
-    <title>App Engine Demo</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="result">Loading...</div>
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/theme/ -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="//getbootstrap.com/favicon.ico">
 
-    <script>
-$(document).ready(function() {
-  $.getJSON('/demo', function(data) {
-    $('#result').html("Hello, " + data.name);
-  });
-});
-    </script>
-  </body>
+        <title>Buttonizer</title>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/_ah/channel/jsapi"></script>
+        <!-- TODO: Replace reference by real one before production -->
+        <script src="js/main.js"></script>
+
+        <link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="//getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="//getbootstrap.com/examples/theme/theme.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body role="document">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Buttonizer</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="headerwrap">
+        <div class="container theme-showcase" role="main">
+            <h1>Buttonizer</h1>
+
+            <div id="step1" class="jumbotron">
+                <div class="supertext">
+                    <strong>Step 1:</strong> Press your button for connect and change action.
+                </div>
+                <button type="button" class="btn btn-lg btn-danger superbutton" id="button" data-msg-change="Button found: ">Push the button</button>
+            </div>
+
+            <div id="step2" class="jumbotron hidden">
+                <div class="supertext">
+                    <strong>Step 2:</strong> Choose the action.
+                </div>
+                <button type="button" class="btn btn-lg btn-danger superbutton" id="button" data-msg-change="Set action">Push the button</button>
+                <button type="button" class="btn btn-lg btn-danger superbutton" id="button" data-msg-change="Set action">Push the button</button>
+                <button type="button" class="btn btn-lg btn-danger superbutton" id="button" data-msg-change="Set action">Push the button</button>
+                <button type="button" class="btn btn-lg btn-danger superbutton" id="button" data-msg-change="Set action">Push the button</button>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
