@@ -1,13 +1,12 @@
 package myapp;
 
-import java.io.IOException;
 import javax.servlet.http.*;
+import java.io.IOException;
 
 public class DemoServlet extends HttpServlet {
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/plain");
-        resp.getWriter().println("{ \"name\": \"World\" }");
+        resp.getWriter().println("{ \"name\": \"Buttonizer Team\" }");
     }
 }

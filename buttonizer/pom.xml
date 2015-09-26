@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
     <version>1.0</version>
 
-    <groupId>com.google.appengine.demos</groupId>
-    <artifactId>appengine-try-java</artifactId>
+    <groupId>io.buttonizer</groupId>
+    <artifactId>services</artifactId>
 
     <properties>
         <appengine.app.version>1</appengine.app.version>
@@ -61,10 +61,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-      
+
     <build>
-        <outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory> 
-                                   
+        <outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
